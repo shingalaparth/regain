@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_service_label">Regain</string>
+    <string name="a11y_service_description">Lets Regain notice when Instagram, YouTube, Snapchat, TikTok or your browser open a short-video screen, and then steps you out of it. Messages and everything else keep working. Screen content is checked on your phone only and is never stored or sent anywhere.</string>
+</resources>

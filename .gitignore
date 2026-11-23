@@ -1,0 +1,19 @@
+# Build output
+build/
+.gradle/
+*.apk
+*.aab
+*.keystore
+local.properties
+.idea/
+.cxx/
+captures/
+# Research material: pulled APKs and decompiled output (third-party, never commit)
+research/apk/*
+!research/apk/.gitkeep
+# Secrets
+.env
+*.jks
+
+# Local
+research/dumps/

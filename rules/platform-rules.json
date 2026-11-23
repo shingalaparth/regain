@@ -1,0 +1,128 @@
+{
+  "version": 2,
+  "updated": "2026-11-22",
+  "apps": [
+    {
+      "packages": [
+        "com.instagram.android"
+      ],
+      "escapeTab": "direct_tab",
+      "surfaces": [
+        {
+          "surface": "REEL_FROM_DM",
+          "allOf": [
+            "clips_viewer_view_pager"
+          ],
+          "anyOf": [
+            "clips_sent_by",
+            "reel_viewer_message_composer",
+            "reply_bar_container_scroll_view"
+          ],
+          "verified": false,
+          "counterIds": [
+            "clips_viewer_view_pager"
+          ]
+        },
+        {
+          "surface": "REELS_FEED",
+          "allOf": [
+            "clips_viewer_view_pager"
+          ],
+          "anyOf": [
+            "clips_ufi_component",
+            "clips_author_username",
+            "clips_video_container"
+          ],
+          "verified": true,
+          "counterIds": [
+            "clips_viewer_view_pager"
+          ]
+        },
+        {
+          "surface": "DM",
+          "anyOf": [
+            "direct_thread_header",
+            "row_thread_composer_edittext",
+            "direct_inbox_recycler_view"
+          ],
+          "verified": false
+        }
+      ]
+    },
+    {
+      "packages": [
+        "com.google.android.youtube",
+        "app.revanced.android.youtube",
+        "app.rvx.android.youtube"
+      ],
+      "surfaces": [
+        {
+          "surface": "SHORTS",
+          "anyOf": [
+            "reel_recycler",
+            "reel_player_page_container",
+            "reel_watch_player",
+            "reel_watch_fragment_root"
+          ],
+          "verified": false,
+          "counterIds": [
+            "reel_recycler"
+          ]
+        }
+      ]
+    },
+    {
+      "packages": [
+        "com.snapchat.android"
+      ],
+      "surfaces": [
+        {
+          "surface": "SPOTLIGHT",
+          "anyOf": [
+            "spotlight_container",
+            "spotlight_pager",
+            "spotlight_fullscreen_player"
+          ],
+          "verified": false,
+          "counterIds": [
+            "spotlight_pager"
+          ]
+        }
+      ]
+    },
+    {
+      "packages": [
+        "com.zhiliaoapp.musically",
+        "com.ss.android.ugc.trill"
+      ],
+      "surfaces": [
+        {
+          "surface": "WHOLE_APP",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "packages": [
+        "com.android.chrome",
+        "org.mozilla.firefox",
+        "com.brave.browser",
+        "com.sec.android.app.sbrowser",
+        "com.vivo.browser"
+      ],
+      "urlBarId": "url_bar",
+      "surfaces": [
+        {
+          "surface": "BROWSER_SHORT_URL",
+          "urlContains": [
+            "instagram.com/reels",
+            "instagram.com/reel/",
+            "youtube.com/shorts/",
+            "snapchat.com/spotlight"
+          ],
+          "verified": false
+        }
+      ]
+    }
+  ]
+}
